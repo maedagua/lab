@@ -1,0 +1,16 @@
+site_metadata:
+  title: "Lab Mãe D'água"
+  description: "Website criado com fonte.wiki e Divisor"
+  theme: "minima"
+  github_repository_url: "git@github.com:maedagua/lab.git" #edit this line
+  github_pages_url: "https://maedagua.github.io/lab/" #edit this line
+  about_page_title: "Saiba mais"
+  about_page_body: "Este site é parte do Lab Mãe D'água. Utiliza o app Divisor para buscar conteúdos automaticamente na fonte.wiki."
+
+source_repository: "https://github.com/fonte-wiki/Backup-fonte-wiki" #leave this to use fonte.wiki as the source repository
+
+content_mapping:
+  home_page_source: "projetos/maedagua.md" #edit this line to choose the home page of your website
+  subpages_folder: "projetos/maedagua" #optionally add a folder from the source repository whose contents will be imported as subpages
+  destination_folder: "site_contents"
+  media_destination_folder: "assets/media"
