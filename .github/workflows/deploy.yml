@@ -18,6 +18,8 @@ jobs:
         with:
           name: github-pages
           path: site_contents
+          workflow: main.yml
+          run_id: ${{ github.event.workflow_run.id }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
