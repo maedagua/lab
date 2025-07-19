@@ -1,10 +1,9 @@
 name: Generate and Deploy Website
 
 on:
-  workflow_run:
-    workflows: ["Generate and Deploy Website"]
-    types:
-      - completed
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
+  workflow_dispatch:
 
 jobs:
   build:
